@@ -1,7 +1,7 @@
 @import '../../styles/utils/colors';
 
 .submitButton{
-  text-align: center;
+  // text-align: center;
   color: white;
   line-height: 50px;
   font-size: 20px;
@@ -10,4 +10,31 @@
   background-color: $grass-blade;
   padding: 0 2em;
   cursor: pointer;
+  display: flex;
+  // justify-content: space-between;
+
+  &--label{
+    justify-content: center;
+  }
+
+  &--extra-space{
+    width: 1em;
+  }
+
+  &--loading{
+    animation-name: loading-spinner;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes loading-spinner {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 }
