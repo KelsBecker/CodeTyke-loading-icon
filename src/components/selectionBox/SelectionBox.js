@@ -12,7 +12,7 @@ const SelectionBox = (props) => {
       <input className="selectionBox--checkbox" type="checkbox" />
       <span className="selectionBox--text">{props.answer.text}</span>
     </div>
-   )
+  )
 }
 
 export default SelectionBox;
